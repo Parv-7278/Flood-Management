@@ -1,0 +1,209 @@
+{
+  "metrics": {
+    "cut_off_settlement_count": 4,
+    "total_stranded_population": 8500,
+    "damaged_buildings_count": 193,
+    "damaged_buildings_area_sqm": 357614.4,
+    "flooded_road_length_meters": 8554.0,
+    "flooded_road_length_km": 8.55,
+    "severed_bridges_count": 3
+  },
+  "routing_details": {
+    "total_settlements_analyzed": 12,
+    "cutoff_count": 4,
+    "accessible_count": 8,
+    "total_stranded_population": 8500,
+    "cutoff_settlements": [
+      {
+        "name": "Kodari",
+        "name_ne": "कोदारी",
+        "population": 2400,
+        "status": "CUT OFF / ISOLATED",
+        "status_ne": "सम्पर्क विच्छेदित",
+        "elevation_m": 1780,
+        "coordinates": [
+          85.968,
+          27.972
+        ],
+        "pre_event_nearest_hospital": "Barhabise Primary Healthcare Center",
+        "pre_event_dist_km": 27.5,
+        "rescue_priority": "CRITICAL - AIRLIFT REQUIRED"
+      },
+      {
+        "name": "Tatopani",
+        "name_ne": "तातोपानी",
+        "population": 3100,
+        "status": "CUT OFF / ISOLATED",
+        "status_ne": "सम्पर्क विच्छेदित",
+        "elevation_m": 1540,
+        "coordinates": [
+          85.938,
+          27.954
+        ],
+        "pre_event_nearest_hospital": "Barhabise Primary Healthcare Center",
+        "pre_event_dist_km": 23.6,
+        "rescue_priority": "CRITICAL - AIRLIFT REQUIRED"
+      },
+      {
+        "name": "Liping",
+        "name_ne": "लिपिङ",
+        "population": 1150,
+        "status": "CUT OFF / ISOLATED",
+        "status_ne": "सम्पर्क विच्छेदित",
+        "elevation_m": 1820,
+        "coordinates": [
+          85.975,
+          27.981
+        ],
+        "pre_event_nearest_hospital": "Barhabise Primary Healthcare Center",
+        "pre_event_dist_km": 29.0,
+        "rescue_priority": "CRITICAL - AIRLIFT REQUIRED"
+      },
+      {
+        "name": "Larcha",
+        "name_ne": "लार्चा",
+        "population": 1850,
+        "status": "CUT OFF / ISOLATED",
+        "status_ne": "सम्पर्क विच्छेदित",
+        "elevation_m": 1460,
+        "coordinates": [
+          85.918,
+          27.925
+        ],
+        "pre_event_nearest_hospital": "Barhabise Primary Healthcare Center",
+        "pre_event_dist_km": 19.3,
+        "rescue_priority": "CRITICAL - AIRLIFT REQUIRED"
+      }
+    ],
+    "accessible_settlements": [
+      {
+        "name": "Chaku",
+        "name_ne": "चाकु",
+        "population": 2100,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Barhabise Primary Healthcare Center",
+        "post_event_dist_km": 15.2,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.892,
+          27.896
+        ]
+      },
+      {
+        "name": "Marming",
+        "name_ne": "मार्मिङ",
+        "population": 1420,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Barhabise Primary Healthcare Center",
+        "post_event_dist_km": 18.4,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.915,
+          27.882
+        ]
+      },
+      {
+        "name": "Hindi",
+        "name_ne": "हिन्दी",
+        "population": 1600,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Barhabise Primary Healthcare Center",
+        "post_event_dist_km": 9.4,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.881,
+          27.854
+        ]
+      },
+      {
+        "name": "Barhabise",
+        "name_ne": "बाह्रबिसे",
+        "population": 9200,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Barhabise Primary Healthcare Center",
+        "post_event_dist_km": 0.0,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.898,
+          27.789
+        ]
+      },
+      {
+        "name": "Syaphrubesi",
+        "name_ne": "स्याफ्रुबेँसी",
+        "population": 3400,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Syaphrubesi Health Center",
+        "post_event_dist_km": 0.0,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.342,
+          28.161
+        ]
+      },
+      {
+        "name": "Dhunche",
+        "name_ne": "धुन्चे",
+        "population": 6800,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Dhunche District Hospital",
+        "post_event_dist_km": 0.0,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.301,
+          28.112
+        ]
+      },
+      {
+        "name": "Mailung",
+        "name_ne": "मैलुङ",
+        "population": 1550,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Dhunche District Hospital",
+        "post_event_dist_km": 12.8,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.253,
+          28.032
+        ]
+      },
+      {
+        "name": "Rasuwagadhi",
+        "name_ne": "रसुवागढी",
+        "population": 950,
+        "status": "ACCESSIBLE",
+        "status_ne": "पहुँचयोग्य",
+        "nearest_hospital": "Syaphrubesi Health Center",
+        "post_event_dist_km": 16.2,
+        "detour_km": 0.0,
+        "coordinates": [
+          85.378,
+          28.272
+        ]
+      }
+    ]
+  },
+  "building_breakdown": {
+    "Tatopani": 78,
+    "Kodari": 55,
+    "Larcha": 44,
+    "Liping": 16
+  },
+  "layers": {
+    "damaged_roads_path": "C:\\Users\\Parv\\OneDrive\\Desktop\\iit m\\data\\cache\\damaged_roads.geojson",
+    "damaged_bridges_path": "C:\\Users\\Parv\\OneDrive\\Desktop\\iit m\\data\\cache\\damaged_bridges.geojson"
+  },
+  "attributions": {
+    "copernicus_sentinel": "Contains modified Copernicus Sentinel data [2026], processed by FloodWatch-Himalaya.",
+    "copernicus_dem": "Produced using Copernicus WorldDEM-30 © DLR e.V. 2026, European Union.",
+    "osm_ohsome": "OSM data © OpenStreetMap contributors, accessed via HeiGIT ohsome API (snapshot < 2026-08-26).",
+    "emsr_reference": "Reference validation derived from Copernicus Emergency Management Service [EMSR927]."
+  }
+}

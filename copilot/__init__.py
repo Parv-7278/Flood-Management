@@ -1,0 +1,1 @@
+"""FloodWatch-Himalaya copilot package."""

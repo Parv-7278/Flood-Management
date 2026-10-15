@@ -1,0 +1,234 @@
+{
+  "type": "FeatureCollection",
+  "name": "settlements",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.968,
+          27.972
+        ]
+      },
+      "properties": {
+        "name": "Kodari",
+        "name_ne": "कोदारी",
+        "lat": 27.972,
+        "lon": 85.968,
+        "pop": 2400,
+        "type": "village",
+        "elevation_m": 1780
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.938,
+          27.954
+        ]
+      },
+      "properties": {
+        "name": "Tatopani",
+        "name_ne": "तातोपानी",
+        "lat": 27.954,
+        "lon": 85.938,
+        "pop": 3100,
+        "type": "village",
+        "elevation_m": 1540
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.975,
+          27.981
+        ]
+      },
+      "properties": {
+        "name": "Liping",
+        "name_ne": "लिपिङ",
+        "lat": 27.981,
+        "lon": 85.975,
+        "pop": 1150,
+        "type": "hamlet",
+        "elevation_m": 1820
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.918,
+          27.925
+        ]
+      },
+      "properties": {
+        "name": "Larcha",
+        "name_ne": "लार्चा",
+        "lat": 27.925,
+        "lon": 85.918,
+        "pop": 1850,
+        "type": "village",
+        "elevation_m": 1460
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.892,
+          27.896
+        ]
+      },
+      "properties": {
+        "name": "Chaku",
+        "name_ne": "चाकु",
+        "lat": 27.896,
+        "lon": 85.892,
+        "pop": 2100,
+        "type": "village",
+        "elevation_m": 1380
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.915,
+          27.882
+        ]
+      },
+      "properties": {
+        "name": "Marming",
+        "name_ne": "मार्मिङ",
+        "lat": 27.882,
+        "lon": 85.915,
+        "pop": 1420,
+        "type": "village",
+        "elevation_m": 1620
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.881,
+          27.854
+        ]
+      },
+      "properties": {
+        "name": "Hindi",
+        "name_ne": "हिन्दी",
+        "lat": 27.854,
+        "lon": 85.881,
+        "pop": 1600,
+        "type": "village",
+        "elevation_m": 1250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.898,
+          27.789
+        ]
+      },
+      "properties": {
+        "name": "Barhabise",
+        "name_ne": "बाह्रबिसे",
+        "lat": 27.789,
+        "lon": 85.898,
+        "pop": 9200,
+        "type": "town",
+        "elevation_m": 820
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.342,
+          28.161
+        ]
+      },
+      "properties": {
+        "name": "Syaphrubesi",
+        "name_ne": "स्याफ्रुबेँसी",
+        "lat": 28.161,
+        "lon": 85.342,
+        "pop": 3400,
+        "type": "town",
+        "elevation_m": 1460
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.301,
+          28.112
+        ]
+      },
+      "properties": {
+        "name": "Dhunche",
+        "name_ne": "धुन्चे",
+        "lat": 28.112,
+        "lon": 85.301,
+        "pop": 6800,
+        "type": "district_capital",
+        "elevation_m": 1960
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.253,
+          28.032
+        ]
+      },
+      "properties": {
+        "name": "Mailung",
+        "name_ne": "मैलुङ",
+        "lat": 28.032,
+        "lon": 85.253,
+        "pop": 1550,
+        "type": "village",
+        "elevation_m": 1120
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.378,
+          28.272
+        ]
+      },
+      "properties": {
+        "name": "Rasuwagadhi",
+        "name_ne": "रसुवागढी",
+        "lat": 28.272,
+        "lon": 85.378,
+        "pop": 950,
+        "type": "border_post",
+        "elevation_m": 1810
+      }
+    }
+  ]
+}

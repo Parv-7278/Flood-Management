@@ -1,0 +1,174 @@
+{
+  "type": "FeatureCollection",
+  "name": "EMSR927_Delineation_GroundTruth",
+  "attribution": "Reference validation derived from Copernicus Emergency Management Service [EMSR927].",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.91,
+              27.915
+            ],
+            [
+              85.918,
+              27.923
+            ],
+            [
+              85.922,
+              27.929
+            ],
+            [
+              85.932,
+              27.942
+            ],
+            [
+              85.94,
+              27.956
+            ],
+            [
+              85.955,
+              27.965
+            ],
+            [
+              85.972,
+              27.975
+            ],
+            [
+              85.98,
+              27.985
+            ],
+            [
+              85.975,
+              27.988
+            ],
+            [
+              85.962,
+              27.978
+            ],
+            [
+              85.946,
+              27.968
+            ],
+            [
+              85.932,
+              27.952
+            ],
+            [
+              85.923,
+              27.938
+            ],
+            [
+              85.912,
+              27.922
+            ],
+            [
+              85.905,
+              27.915
+            ],
+            [
+              85.91,
+              27.915
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "EMSR927_DELIN_01",
+        "event_type": "Glacier Collapse & Hyperconcentrated Debris Flow",
+        "sensor": "Sentinel-1A + Sentinel-2A / WorldView-3",
+        "valid_date": "2026-08-27T06:00:00Z",
+        "area_sqkm": 8.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.888,
+              27.89
+            ],
+            [
+              85.897,
+              27.893
+            ],
+            [
+              85.899,
+              27.901
+            ],
+            [
+              85.892,
+              27.904
+            ],
+            [
+              85.885,
+              27.898
+            ],
+            [
+              85.888,
+              27.89
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "EMSR927_DELIN_02",
+        "event_type": "Debris Dammed Impoundment Lake",
+        "sensor": "Sentinel-2B Optical MNDWI",
+        "valid_date": "2026-08-27T08:30:00Z",
+        "area_sqkm": 2.15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.248,
+              28.025
+            ],
+            [
+              85.258,
+              28.035
+            ],
+            [
+              85.265,
+              28.05
+            ],
+            [
+              85.258,
+              28.054
+            ],
+            [
+              85.25,
+              28.04
+            ],
+            [
+              85.242,
+              28.028
+            ],
+            [
+              85.248,
+              28.025
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "EMSR927_DELIN_03",
+        "event_type": "Flash Flood & Bank Scour",
+        "sensor": "Sentinel-1B IW GRD",
+        "valid_date": "2026-08-27T06:00:00Z",
+        "area_sqkm": 3.75
+      }
+    }
+  ]
+}

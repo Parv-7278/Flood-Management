@@ -1,0 +1,100 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.918,
+          27.925
+        ]
+      },
+      "properties": {
+        "id": "bridge_larcha",
+        "name": "Larcha Steel Truss Bridge",
+        "name_ne": "लार्चा पुल",
+        "lat": 27.925,
+        "lon": 85.918,
+        "span_m": 72,
+        "structure": "steel_truss"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.975,
+          27.981
+        ]
+      },
+      "properties": {
+        "id": "bridge_miteri",
+        "name": "Friendship Bridge (Miteri Sanghu)",
+        "name_ne": "मितेरी पुल",
+        "lat": 27.981,
+        "lon": 85.975,
+        "span_m": 48,
+        "structure": "concrete_girder"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.938,
+          27.954
+        ]
+      },
+      "properties": {
+        "id": "bridge_tatopani",
+        "name": "Tatopani Gorge Crossing",
+        "name_ne": "तातोपानी क्रसिङ",
+        "lat": 27.954,
+        "lon": 85.938,
+        "span_m": 55,
+        "structure": "suspension"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.892,
+          27.896
+        ]
+      },
+      "properties": {
+        "id": "bridge_chaku",
+        "name": "Chaku Khola Bridge",
+        "name_ne": "चाकु खोला पुल",
+        "lat": 27.896,
+        "lon": 85.892,
+        "span_m": 38,
+        "structure": "concrete_girder"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.342,
+          28.161
+        ]
+      },
+      "properties": {
+        "id": "bridge_syaphru",
+        "name": "Syaphrubesi Trishuli Bridge",
+        "name_ne": "स्याफ्रुबेँसी त्रिशुली पुल",
+        "lat": 28.161,
+        "lon": 85.342,
+        "span_m": 64,
+        "structure": "steel_truss"
+      }
+    }
+  ]
+}

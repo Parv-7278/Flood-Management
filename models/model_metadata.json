@@ -1,0 +1,57 @@
+{
+  "model_version": "v2.6-production",
+  "training_date": "2026-10-14T20:25:13.972920Z",
+  "model_type": "RandomForestClassifier (Ensemble Decision Trees)",
+  "framework": "scikit-learn 1.9.1",
+  "feature_names": [
+    "elevation_m",
+    "slope_deg",
+    "valley_dist_km",
+    "flow_accumulation_proxy",
+    "rainfall_intensity_mmh",
+    "rainfall_duration_hrs",
+    "cumulative_precip_mm",
+    "surge_height_m",
+    "upstream_discharge_m3s",
+    "thermal_anomaly_k",
+    "propagation_factor",
+    "building_density_sqkm",
+    "road_proximity_m",
+    "bridge_proximity_m"
+  ],
+  "feature_importances": {
+    "flow_accumulation_proxy": 0.4109,
+    "valley_dist_km": 0.3737,
+    "slope_deg": 0.0386,
+    "upstream_discharge_m3s": 0.0264,
+    "surge_height_m": 0.026,
+    "thermal_anomaly_k": 0.0255,
+    "cumulative_precip_mm": 0.0244,
+    "propagation_factor": 0.0206,
+    "rainfall_duration_hrs": 0.0137,
+    "rainfall_intensity_mmh": 0.0124,
+    "elevation_m": 0.0073,
+    "building_density_sqkm": 0.007,
+    "road_proximity_m": 0.0068,
+    "bridge_proximity_m": 0.0068
+  },
+  "metrics": {
+    "test_precision": 0.995575221238938,
+    "test_recall": 0.8078994614003591,
+    "test_f1": 0.8919722497522299,
+    "test_iou_jaccard": 0.8050089445438283,
+    "test_roc_auc": 0.9900390479980048,
+    "test_brier_score": 0.05016340952174401,
+    "road_mae_meters": 320.32068275288384,
+    "road_r2_score": 0.9861126320110299
+  },
+  "geographic_split": {
+    "train_sectors": [
+      "bhote_upper",
+      "bhote_middle",
+      "trishuli_west"
+    ],
+    "test_sector": "bhote_lower (Barhabise confluence)"
+  },
+  "status": "TRAINED & VALIDATED"
+}

@@ -1,0 +1,100 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.298,
+          28.114
+        ]
+      },
+      "properties": {
+        "name": "Dhunche District Hospital",
+        "name_ne": "धुन्चे जिल्ला अस्पताल",
+        "lat": 28.114,
+        "lon": 85.298,
+        "type": "hospital",
+        "beds": 45,
+        "helipad": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.901,
+          27.791
+        ]
+      },
+      "properties": {
+        "name": "Barhabise Primary Healthcare Center",
+        "name_ne": "बाह्रबिसे प्राथमिक स्वास्थ्य केन्द्र",
+        "lat": 27.791,
+        "lon": 85.901,
+        "type": "hospital",
+        "beds": 25,
+        "helipad": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.935,
+          27.952
+        ]
+      },
+      "properties": {
+        "name": "Tatopani Health Post",
+        "name_ne": "तातोपानी स्वास्थ्य चौकी",
+        "lat": 27.952,
+        "lon": 85.935,
+        "type": "health_post",
+        "beds": 6,
+        "helipad": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.34,
+          28.159
+        ]
+      },
+      "properties": {
+        "name": "Syaphrubesi Health Center",
+        "name_ne": "स्याफ्रुबेँसी स्वास्थ्य केन्द्र",
+        "lat": 28.159,
+        "lon": 85.34,
+        "type": "clinic",
+        "beds": 12,
+        "helipad": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.892,
+          27.785
+        ]
+      },
+      "properties": {
+        "name": "Sindhupalchok Emergency Ops Center",
+        "name_ne": "सिन्धुपाल्चोक आपतकालीन सञ्चालन केन्द्र",
+        "lat": 27.785,
+        "lon": 85.892,
+        "type": "staging_hub",
+        "beds": 0,
+        "helipad": true
+      }
+    }
+  ]
+}

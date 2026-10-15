@@ -1,0 +1,933 @@
+/* FloodWatch-Himalaya: Comprehensive WCAG 2.2 AA White Theme Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+
+/* ==========================================================================
+   Design Tokens & CSS Variables
+   ========================================================================== */
+:root {
+    --bg-page: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-surface-subtle: #f1f5f9;
+    
+    --text-primary: #0f172a;        /* Deep Navy - Contrast 15.8:1 on white */
+    --text-secondary: #334155;      /* Slate Grey - Contrast 9.6:1 on white */
+    --text-muted: #475569;          /* Medium Slate - Contrast 6.2:1 on white */
+    
+    --border-main: #cbd5e1;         /* Visible grey border */
+    --border-light: #e2e8f0;
+    
+    --interactive-blue: #0284c7;    /* Accessible Blue */
+    --interactive-hover: #0369a1;
+    --interactive-bg: #e0f2fe;
+    
+    --danger-bg: #fee2e2;
+    --danger-text: #991b1b;         /* Dark Red - Contrast 7.5:1 */
+    --danger-border: #fca5a5;
+    
+    --warning-bg: #fef3c7;
+    --warning-text: #92400e;        /* Dark Amber - Contrast 6.8:1 */
+    --warning-border: #fcd34d;
+    
+    --success-bg: #dcfce7;
+    --success-text: #166534;        /* Dark Green - Contrast 6.9:1 */
+    --success-border: #86efac;
+    
+    --info-bg: #e0f2fe;
+    --info-text: #0369a1;           /* Dark Blue/Cyan - Contrast 6.8:1 */
+    --info-border: #7dd3fc;
+    
+    --purple-bg: #f3e8ff;
+    --purple-text: #6b21a8;         /* Dark Purple - Contrast 7.1:1 */
+    --purple-border: #d8b4fe;
+}
+
+/* ==========================================================================
+   Global Page & Typography Resets
+   ========================================================================== */
+html, body, .stApp {
+    background-color: var(--bg-page) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Base text contrast */
+.stApp p, .stApp span, .stApp div, .stApp li, .stApp label {
+    color: var(--text-primary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.3px;
+}
+
+/* Standard markdown body text */
+[data-testid="stMarkdownContainer"] > p {
+    color: var(--text-secondary) !important;
+    line-height: 1.6;
+}
+
+[data-testid="stMarkdownContainer"] strong,
+[data-testid="stMarkdownContainer"] b {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMarkdownContainer"] hr {
+    border: 0 !important;
+    border-top: 1px solid var(--border-light) !important;
+    margin: 18px 0 !important;
+}
+
+/* Streamlit Header Bar Clean Reset */
+header[data-testid="stHeader"] {
+    background-color: var(--bg-surface) !important;
+    border-bottom: 1px solid var(--border-light) !important;
+}
+
+/* Accessible Links */
+a, a:visited {
+    color: var(--interactive-blue) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    font-weight: 500 !important;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--interactive-hover) !important;
+    text-decoration: underline !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--interactive-blue) !important;
+    outline-offset: 2px !important;
+}
+
+/* ==========================================================================
+   Button Styling (Primary, Secondary, Active States)
+   ========================================================================== */
+/* All Secondary & Default Buttons */
+div[data-testid="stButton"] button,
+button[kind="secondary"],
+button[data-testid="baseButton-secondary"] {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    padding: 8px 14px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+/* Ensure inner elements of secondary buttons keep dark text */
+div[data-testid="stButton"] button[kind="secondary"] *,
+div[data-testid="stButton"] button[data-testid="baseButton-secondary"] *,
+button[kind="secondary"] *,
+button[data-testid="baseButton-secondary"] * {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stButton"] button:hover,
+button[kind="secondary"]:hover,
+button[data-testid="baseButton-secondary"]:hover {
+    background-color: var(--bg-surface-subtle) !important;
+    color: var(--interactive-blue) !important;
+    border-color: var(--interactive-blue) !important;
+    box-shadow: 0 2px 4px rgba(2, 132, 199, 0.12) !important;
+}
+
+div[data-testid="stButton"] button:hover *,
+button[kind="secondary"]:hover *,
+button[data-testid="baseButton-secondary"]:hover * {
+    color: var(--interactive-blue) !important;
+}
+
+/* Primary Active Buttons */
+div[data-testid="stButton"] button[kind="primary"],
+div[data-testid="stButton"] button[data-testid="baseButton-primary"],
+button[kind="primary"],
+button[data-testid="baseButton-primary"] {
+    background-color: var(--interactive-blue) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--interactive-blue) !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    padding: 8px 14px !important;
+    box-shadow: 0 2px 4px rgba(2, 132, 199, 0.25) !important;
+}
+
+/* Critical: Force all inner text of primary buttons to be pure white */
+div[data-testid="stButton"] button[kind="primary"] *,
+div[data-testid="stButton"] button[data-testid="baseButton-primary"] *,
+button[kind="primary"] *,
+button[data-testid="baseButton-primary"] * {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"]:hover,
+div[data-testid="stButton"] button[data-testid="baseButton-primary"]:hover,
+button[kind="primary"]:hover,
+button[data-testid="baseButton-primary"]:hover {
+    background-color: var(--interactive-hover) !important;
+    border-color: var(--interactive-hover) !important;
+    box-shadow: 0 3px 6px rgba(2, 132, 199, 0.35) !important;
+}
+
+/* Download Buttons */
+div[data-testid="stDownloadButton"] button {
+    background-color: var(--interactive-blue) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--interactive-blue) !important;
+}
+
+div[data-testid="stDownloadButton"] button * {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stDownloadButton"] button:hover {
+    background-color: var(--interactive-hover) !important;
+    border-color: var(--interactive-hover) !important;
+}
+
+/* Disabled Button State */
+button:disabled,
+button[disabled] {
+    background-color: var(--bg-surface-subtle) !important;
+    color: var(--text-muted) !important;
+    border-color: var(--border-light) !important;
+    cursor: not-allowed !important;
+    opacity: 0.7 !important;
+    box-shadow: none !important;
+}
+
+button:disabled * {
+    color: var(--text-muted) !important;
+}
+
+/* ==========================================================================
+   Form Controls: Selectbox, Dropdown Menus, Text Inputs, Sliders
+   ========================================================================== */
+/* Widget Labels */
+label[data-testid="stWidgetLabel"],
+label[data-testid="stWidgetLabel"] p,
+label[data-testid="stWidgetLabel"] span {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+/* Selectbox Input Box */
+div[data-baseweb="select"] {
+    background-color: var(--bg-surface) !important;
+    border-radius: 8px !important;
+}
+
+div[data-baseweb="select"] > div {
+    background-color: var(--bg-surface) !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+    transition: border-color 0.15s ease;
+}
+
+div[data-baseweb="select"] > div:hover {
+    border-color: var(--interactive-blue) !important;
+}
+
+div[data-baseweb="select"] span,
+div[data-baseweb="select"] div {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+div[data-baseweb="select"] svg {
+    fill: var(--text-secondary) !important;
+    color: var(--text-secondary) !important;
+}
+
+/* Dropdown Menu Popover (When opened) */
+div[data-baseweb="popover"],
+div[data-baseweb="popover"] > div,
+ul[role="listbox"],
+div[data-baseweb="menu"] {
+    background-color: #ffffff !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    padding: 6px !important;
+    z-index: 99999 !important;
+}
+
+li[role="option"] {
+    background-color: #ffffff !important;
+    color: var(--text-primary) !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    padding: 9px 12px !important;
+    cursor: pointer !important;
+    transition: background-color 0.1s ease;
+}
+
+li[role="option"]:hover,
+li[role="option"][aria-selected="true"] {
+    background-color: var(--interactive-bg) !important;
+    color: var(--interactive-blue) !important;
+    font-weight: 700 !important;
+}
+
+li[role="option"] * {
+    color: inherit !important;
+}
+
+/* Text Inputs */
+div[data-testid="stTextInput"] input {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+}
+
+div[data-testid="stTextInput"] input::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.9 !important;
+}
+
+div[data-testid="stTextInput"] input:focus {
+    border-color: var(--interactive-blue) !important;
+    box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2) !important;
+}
+
+/* Checkboxes */
+div[data-testid="stCheckbox"] label span,
+div[data-testid="stCheckbox"] label p {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+/* Sliders */
+div[data-testid="stSlider"] div[data-testid="stMarkdownContainer"] p,
+div[data-testid="stSlider"] label {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+div[data-testid="stSlider"] [data-testid="stThumbValue"],
+div[data-testid="stSlider"] div[data-baseweb="slider"] div[role="slider"] {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+div[data-testid="stSliderTickBar"] span {
+    color: var(--text-secondary) !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   Expanders & Tabs
+   ========================================================================== */
+div[data-testid="stExpander"] {
+    background-color: var(--bg-surface) !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+    overflow: hidden !important;
+    margin-bottom: 12px !important;
+}
+
+div[data-testid="stExpander"] summary {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+    padding: 12px 16px !important;
+    cursor: pointer !important;
+}
+
+div[data-testid="stExpander"] summary:hover {
+    color: var(--interactive-blue) !important;
+    background-color: var(--bg-surface-subtle) !important;
+}
+
+div[data-testid="stExpander"] summary * {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stExpander"] summary:hover * {
+    color: var(--interactive-blue) !important;
+}
+
+div[data-testid="stExpander"] summary svg {
+    fill: var(--text-secondary) !important;
+    color: var(--text-secondary) !important;
+}
+
+div[data-testid="stExpanderDetails"] {
+    background-color: var(--bg-surface) !important;
+    padding: 18px !important;
+    border-top: 1px solid var(--border-light) !important;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.15s ease !important;
+}
+
+button[data-baseweb="tab"] * {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+}
+
+button[data-baseweb="tab"]:hover {
+    color: var(--text-primary) !important;
+}
+
+button[data-baseweb="tab"]:hover * {
+    color: var(--text-primary) !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: var(--interactive-blue) !important;
+    font-weight: 700 !important;
+    border-bottom-color: var(--interactive-blue) !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] * {
+    color: var(--interactive-blue) !important;
+    font-weight: 700 !important;
+}
+
+/* Streamlit Native Metrics */
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricValue"] * {
+    color: var(--text-primary) !important;
+    font-weight: 800 !important;
+    font-size: 22px !important;
+}
+
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] * {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+/* ==========================================================================
+   Alerts & Notifications
+   ========================================================================== */
+div[data-testid="stAlert"] {
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    margin-bottom: 12px !important;
+}
+
+div[data-testid="stAlert"] * {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+/* Info Alert */
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentInfo"]),
+div[data-baseweb="notification"][kind="info"] {
+    background-color: var(--info-bg) !important;
+    border: 1px solid var(--info-border) !important;
+}
+
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentInfo"]) *,
+div[data-baseweb="notification"][kind="info"] * {
+    color: var(--info-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Warning Alert */
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentWarning"]),
+div[data-baseweb="notification"][kind="warning"] {
+    background-color: var(--warning-bg) !important;
+    border: 1px solid var(--warning-border) !important;
+}
+
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentWarning"]) *,
+div[data-baseweb="notification"][kind="warning"] * {
+    color: var(--warning-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Error Alert */
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentError"]),
+div[data-baseweb="notification"][kind="negative"] {
+    background-color: var(--danger-bg) !important;
+    border: 1px solid var(--danger-border) !important;
+}
+
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentError"]) *,
+div[data-baseweb="notification"][kind="negative"] * {
+    color: var(--danger-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Success Alert */
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentSuccess"]),
+div[data-baseweb="notification"][kind="positive"] {
+    background-color: var(--success-bg) !important;
+    border: 1px solid var(--success-border) !important;
+}
+
+div[data-testid="stAlert"]:has([data-testid="stNotificationContentSuccess"]) *,
+div[data-baseweb="notification"][kind="positive"] * {
+    color: var(--success-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Spinner / Loading state */
+div[data-testid="stSpinner"] {
+    color: var(--text-primary) !important;
+}
+
+div[data-testid="stSpinner"] * {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   Tables, Code Blocks & Tooltips
+   ========================================================================== */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 16px 0 !important;
+    background-color: #ffffff !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+th {
+    background-color: var(--bg-surface-subtle) !important;
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+    text-align: left !important;
+    border: 1px solid var(--border-main) !important;
+}
+
+td {
+    color: var(--text-secondary) !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+    border: 1px solid var(--border-main) !important;
+    background-color: #ffffff !important;
+}
+
+tr:nth-child(even) td {
+    background-color: var(--bg-page) !important;
+}
+
+code {
+    background-color: var(--bg-surface-subtle) !important;
+    color: var(--text-primary) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    border: 1px solid var(--border-light) !important;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+}
+
+pre {
+    background-color: var(--bg-page) !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    padding: 14px !important;
+    color: var(--text-primary) !important;
+    font-size: 12px !important;
+}
+
+pre code {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    color: var(--text-primary) !important;
+}
+
+div[data-baseweb="tooltip"],
+div[data-baseweb="tooltip"] > div {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+    line-height: 1.4 !important;
+    max-width: 320px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+div[data-baseweb="tooltip"] * {
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Human-Friendly Metric Scoreboard Cards
+   ========================================================================== */
+.metric-card-white {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-main);
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    border-color: var(--interactive-blue);
+}
+
+.metric-card-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.card-accent-blue::before { background: var(--interactive-blue); }
+.card-accent-amber::before { background: #b45309; }
+.card-accent-red::before { background: #b91c1c; }
+.card-accent-purple::before { background: var(--purple-text); }
+.card-accent-green::before { background: var(--success-text); }
+
+.metric-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.15;
+    margin: 0;
+}
+
+.metric-subtext {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 5px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.info-icon {
+    color: var(--text-muted);
+    cursor: help;
+    font-size: 12px;
+}
+
+/* ==========================================================================
+   Badges & Status Indicators
+   ========================================================================== */
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-status-danger {
+    background-color: var(--danger-bg);
+    color: var(--danger-text);
+    border: 1px solid var(--danger-border);
+}
+
+.badge-status-info {
+    background-color: var(--info-bg);
+    color: var(--info-text);
+    border: 1px solid var(--info-border);
+}
+
+.badge-status-prediction {
+    background-color: var(--purple-bg);
+    color: var(--purple-text);
+    border: 1px solid var(--purple-border);
+}
+
+.badge-status-success {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+    border: 1px solid var(--success-border);
+}
+
+.badge-status-warning {
+    background-color: var(--warning-bg);
+    color: var(--warning-text);
+    border: 1px solid var(--warning-border);
+}
+
+/* ==========================================================================
+   What-If Simulator Panels & Outputs
+   ========================================================================== */
+.preset-container {
+    background-color: var(--bg-surface-subtle);
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+    font-size: 13px;
+}
+
+.preset-container b {
+    color: var(--text-primary);
+}
+
+.prediction-banner {
+    background-color: var(--interactive-bg);
+    border-left: 4px solid var(--interactive-blue);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #0c4a6e;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.delta-badge-pos {
+    background-color: var(--danger-bg);
+    color: var(--danger-text);
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.delta-badge-neg {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.factor-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.factor-row b {
+    color: var(--text-primary);
+}
+
+.factor-bar {
+    height: 8px;
+    background-color: var(--border-main);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.factor-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0284c7, #2563eb);
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   Leaflet / Folium Map Popup & Control Overrides
+   ========================================================================== */
+.leaflet-container {
+    font-family: 'Inter', -apple-system, sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: #ffffff !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid var(--border-main) !important;
+}
+
+.leaflet-popup-content {
+    color: var(--text-primary) !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    margin: 12px 14px !important;
+}
+
+.leaflet-popup-content b,
+.leaflet-popup-content strong {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+.leaflet-popup-close-button {
+    color: var(--text-muted) !important;
+    padding: 6px !important;
+}
+
+.leaflet-popup-close-button:hover {
+    color: var(--text-primary) !important;
+}
+
+.leaflet-control-layers {
+    background-color: #ffffff !important;
+    border: 1px solid var(--border-main) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+    color: var(--text-primary) !important;
+    padding: 8px 12px !important;
+}
+
+.leaflet-control-layers-expanded {
+    background-color: #ffffff !important;
+    color: var(--text-primary) !important;
+}
+
+.leaflet-control-layers label {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    margin-bottom: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.leaflet-control-layers span {
+    color: var(--text-primary) !important;
+}
+
+.leaflet-bar a {
+    background-color: #ffffff !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-main) !important;
+}
+
+.leaflet-bar a:hover {
+    background-color: var(--bg-surface-subtle) !important;
+    color: var(--interactive-blue) !important;
+}
+
+.leaflet-control-attribution,
+.leaflet-control-attribution a {
+    color: var(--text-muted) !important;
+    font-size: 10px !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer-white {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 25px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.footer-white b {
+    color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Thermal Analysis Legend & Probe Box
+   ========================================================================== */
+.thermal-legend-container {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.thermal-gradient-bar-anomaly {
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #053061, #2166ac, #4393c3, #92c5de, #d1e5f0, #f7f7f7, #fddbc7, #f4a582, #d6604d, #b2182b, #67001f);
+    margin: 8px 0 4px 0;
+    border: 1px solid var(--border-main);
+}
+
+.thermal-gradient-bar-lst {
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #0d0887, #46039f, #7201a8, #9c179e, #bd3786, #d8576b, #ed7953, #fb9f3a, #fdca26, #f0f921);
+    margin: 8px 0 4px 0;
+    border: 1px solid var(--border-main);
+}
+
+.thermal-legend-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.thermal-probe-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+

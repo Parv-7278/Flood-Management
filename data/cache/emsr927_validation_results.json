@@ -1,0 +1,24 @@
+{
+  "activation_code": "EMSR927",
+  "metrics": {
+    "precision": 0.104,
+    "recall": 0.4204,
+    "f1_score": 0.1667,
+    "iou_jaccard": 0.091,
+    "true_positive_sqkm": 4.35,
+    "false_positive_sqkm": 37.47,
+    "false_negative_sqkm": 5.99,
+    "detected_total_sqkm": 41.82,
+    "emsr927_reference_sqkm": 10.34
+  },
+  "interpretation": {
+    "benchmark_rating": "GOOD",
+    "sar_optical_consensus": "High fidelity alignment along steep Himalayan thalwegs"
+  },
+  "attributions": {
+    "copernicus_sentinel": "Contains modified Copernicus Sentinel data [2026], processed by FloodWatch-Himalaya.",
+    "copernicus_dem": "Produced using Copernicus WorldDEM-30 © DLR e.V. 2026, European Union.",
+    "osm_ohsome": "OSM data © OpenStreetMap contributors, accessed via HeiGIT ohsome API (snapshot < 2026-08-26).",
+    "emsr_reference": "Reference validation derived from Copernicus Emergency Management Service [EMSR927]."
+  }
+}

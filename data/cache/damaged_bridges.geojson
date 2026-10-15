@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "damaged_bridges",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "bridge_larcha", "name": "Larcha Steel Truss Bridge", "name_ne": "लार्चा पुल", "lat": 27.925, "lon": 85.918, "span_m": 72, "structure": "steel_truss", "is_severed": true, "status": "SEVERED / COLLAPSED" }, "geometry": { "type": "Point", "coordinates": [ 85.918, 27.925 ] } },
+{ "type": "Feature", "properties": { "id": "bridge_miteri", "name": "Friendship Bridge (Miteri Sanghu)", "name_ne": "मितेरी पुल", "lat": 27.981, "lon": 85.975, "span_m": 48, "structure": "concrete_girder", "is_severed": true, "status": "SEVERED / COLLAPSED" }, "geometry": { "type": "Point", "coordinates": [ 85.975, 27.981 ] } },
+{ "type": "Feature", "properties": { "id": "bridge_tatopani", "name": "Tatopani Gorge Crossing", "name_ne": "तातोपानी क्रसिङ", "lat": 27.954, "lon": 85.938, "span_m": 55, "structure": "suspension", "is_severed": true, "status": "SEVERED / COLLAPSED" }, "geometry": { "type": "Point", "coordinates": [ 85.938, 27.954 ] } },
+{ "type": "Feature", "properties": { "id": "bridge_chaku", "name": "Chaku Khola Bridge", "name_ne": "चाकु खोला पुल", "lat": 27.896, "lon": 85.892, "span_m": 38, "structure": "concrete_girder", "is_severed": false, "status": "OPERATIONAL" }, "geometry": { "type": "Point", "coordinates": [ 85.892, 27.896 ] } },
+{ "type": "Feature", "properties": { "id": "bridge_syaphru", "name": "Syaphrubesi Trishuli Bridge", "name_ne": "स्याफ्रुबेँसी त्रिशुली पुल", "lat": 28.161, "lon": 85.342, "span_m": 64, "structure": "steel_truss", "is_severed": false, "status": "OPERATIONAL" }, "geometry": { "type": "Point", "coordinates": [ 85.342, 28.161 ] } }
+]
+}

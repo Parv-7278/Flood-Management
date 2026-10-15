@@ -1,0 +1,277 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.898,
+            27.789
+          ],
+          [
+            85.889,
+            27.818
+          ],
+          [
+            85.881,
+            27.854
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_01",
+        "name": "Arniko Highway (Barhabise to Hindi)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 9400,
+        "hazard_risk": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.881,
+            27.854
+          ],
+          [
+            85.887,
+            27.876
+          ],
+          [
+            85.892,
+            27.896
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_02",
+        "name": "Arniko Highway (Hindi to Chaku)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 5800,
+        "hazard_risk": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.892,
+            27.896
+          ],
+          [
+            85.908,
+            27.912
+          ],
+          [
+            85.918,
+            27.925
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_03",
+        "name": "Arniko Highway (Chaku to Larcha)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 4100,
+        "hazard_risk": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.918,
+            27.925
+          ],
+          [
+            85.929,
+            27.94
+          ],
+          [
+            85.938,
+            27.954
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_04",
+        "name": "Arniko Highway (Larcha to Tatopani)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 4300,
+        "hazard_risk": "critical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.938,
+            27.954
+          ],
+          [
+            85.952,
+            27.962
+          ],
+          [
+            85.968,
+            27.972
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_05",
+        "name": "Arniko Highway (Tatopani to Kodari)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 3900,
+        "hazard_risk": "critical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.968,
+            27.972
+          ],
+          [
+            85.975,
+            27.981
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_06",
+        "name": "Arniko Highway (Kodari to Liping Border)",
+        "highway": "trunk",
+        "ref": "H03",
+        "length_m": 1500,
+        "hazard_risk": "critical"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.892,
+            27.896
+          ],
+          [
+            85.915,
+            27.882
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_feeder_marming",
+        "name": "Marming Rural Feeder Road",
+        "highway": "tertiary",
+        "ref": "R01",
+        "length_m": 3200,
+        "hazard_risk": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.253,
+            28.032
+          ],
+          [
+            85.275,
+            28.072
+          ],
+          [
+            85.301,
+            28.112
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_10",
+        "name": "Pasang Lhamu Highway (Mailung to Dhunche)",
+        "highway": "primary",
+        "ref": "H21",
+        "length_m": 12800,
+        "hazard_risk": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.301,
+            28.112
+          ],
+          [
+            85.321,
+            28.138
+          ],
+          [
+            85.342,
+            28.161
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_11",
+        "name": "Pasang Lhamu Highway (Dhunche to Syaphrubesi)",
+        "highway": "primary",
+        "ref": "H21",
+        "length_m": 8600,
+        "hazard_risk": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            85.342,
+            28.161
+          ],
+          [
+            85.358,
+            28.212
+          ],
+          [
+            85.378,
+            28.272
+          ]
+        ]
+      },
+      "properties": {
+        "id": "road_12",
+        "name": "Pasang Lhamu Highway (Syaphrubesi to Rasuwagadhi)",
+        "highway": "primary",
+        "ref": "H21",
+        "length_m": 16200,
+        "hazard_risk": "high"
+      }
+    }
+  ]
+}
